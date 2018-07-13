@@ -1,7 +1,7 @@
 {
   "name": "ngx-strength-meter",
   "private": false,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Makes your angular components aware of width, height and position change",
   "main": "./bundles/ngx-strength-meter.umd.js",
   "module": "./fesm5/ngx-strength-meter.js",
