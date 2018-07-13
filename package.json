@@ -2,7 +2,7 @@
   "name": "ngx-strength-meter",
   "private": false,
   "version": "1.0.0",
-  "description": "Makes your angular components aware of width, height and position change",
+  "description": "Angular widget for password strength estimation using zxcvbn",
   "main": "./bundles/ngx-strength-meter.umd.js",
   "module": "./fesm5/ngx-strength-meter.js",
   "es2015": "./fesm2015/ngx-strength-meter.js",
