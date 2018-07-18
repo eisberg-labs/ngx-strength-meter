@@ -1,7 +1,7 @@
 {
   "name": "ngx-strength-meter",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular widget for password strength estimation using zxcvbn",
   "main": "./dist/bundles/ngx-strength-meter.umd.js",
   "module": "./dist/fesm5/ngx-strength-meter.js",
