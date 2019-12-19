@@ -1,4 +1,0 @@
-/**
- * @license ngx-strength-meter
- * MIT license
- */
