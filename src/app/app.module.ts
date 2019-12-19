@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {MatCardModule, MatInputModule} from '@angular/material';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {StrengthMeterModule} from 'ngx-strength-meter';
+import {StrengthMeterModule} from 'projects/ngx-strength-meter/src/lib/strength-meter.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
