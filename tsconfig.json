@@ -1,34 +1,41 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "strict": true,
-        "strictPropertyInitialization": false,
-        "allowSyntheticDefaultImports": true,
-        "module": "es2015",
-        "moduleResolution": "node",
-        "rootDir": ".",
-        "sourceMap": true,
-        "inlineSources": true,
-        "target": "es5",
-        "skipLibCheck": true,
-        "lib": [
-            "es2015",
-            "es2016",
-            "es2017",
-            "dom"
-        ],
-        "typeRoots": [
-            "node_modules/@types/"
-        ]
-    },
-    "files": [
-        "public_api.ts",
-        "typings.d.ts"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
     ],
-    "exclude": [
-        "node_modules",
-        "demo"
-    ]
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ngx-strength-meter": [
+        "dist/ngx-strength-meter"
+      ],
+      "ngx-strength-meter/*": [
+        "dist/ngx-strength-meter/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "projects/ngx-strength-meter/typings.d.ts"
+  ]
 }
