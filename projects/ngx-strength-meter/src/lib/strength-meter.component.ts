@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import zxcvbn from 'zxcvbn/dist/zxcvbn.js';
+import zxcvbn from 'zxcvbn';
 
 @Component({
   template: `
