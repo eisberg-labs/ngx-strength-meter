@@ -41,7 +41,7 @@ MIT © [Eisberg Labs](http://eisberg-labs.com)
 
 [npm-image]: https://badge.fury.io/js/ngx-strength-meter.svg
 [npm-url]: https://npmjs.org/package/ngx-strength-meter
-[travis-image]: https://travis-ci.org/eisberg-labs/ngx-strength-meter.svg?branch=master
-[travis-url]: https://travis-ci.org/eisberg-labs/ngx-strength-meter
-[daviddm-image]: https://david-dm.org/eisberg-labs/ngx-strength-meter.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/eisberg-labs/ngx-strength-meter
+[travis-image]: https://travis-ci.com/eisberg-labs/ngx-strength-meter.svg?branch=develop
+[travis-url]: https://travis-ci.com/eisberg-labs/ngx-strength-meter?branch=develop
+[daviddm-image]: https://david-dm.org/eisberg-labs/ngx-strength-meter.svg?theme=shields.io&path=projects/ngx-strength-meter
+[daviddm-url]: https://david-dm.org/eisberg-labs/ngx-strength-meter?path=projects/ngx-strength-meter
