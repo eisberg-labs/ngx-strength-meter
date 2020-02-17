@@ -96,6 +96,11 @@
           "options": {
             "tsConfig": "projects/ngx-strength-meter/tsconfig.lib.json",
             "project": "projects/ngx-strength-meter/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-strength-meter/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-strength-meter-demo"
+    }
+  },
+  "defaultProject": "ngx-strength-meter-demo",
+  "cli": {
+    "analytics": false
+  }
 }
