@@ -31,10 +31,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "get-version": "node -p \"require('./projects/ngx-strength-meter/package').version\"",
     "major-version": "npm --prefix projects/ngx-strength-meter/ version major",
     "minor-version": "npm --prefix projects/ngx-strength-meter/ version minor",
     "patch-version": "npm --prefix projects/ngx-strength-meter/ version patch",
-    "publish": "ng build ngx-strength-meter --prod && cp README.md dist/ngx-strength-meter/README.md && cd dist/ngx-strength-meter && npm publish"
+    "build-prod": "ng build ngx-strength-meter --prod  && cp README.md dist/ngx-strength-meter/README.md",
+    "commit-version": "git commit -a -m \"$(npm run get-version --silent)\" && git tag \"v$(npm run get-version --silent)\"",
+    "publish": "npm run build-prod && cd dist/ngx-strength-meter && npm publish"
   },
   "private": true,
   "dependencies": {
