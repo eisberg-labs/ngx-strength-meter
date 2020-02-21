@@ -33,6 +33,8 @@ And use in your component html
   <strength-meter [value]="form.value.password" (measure)="onStrengthChange($event)"></strength-meter>
 </form>
 ```
+## Demo
+[Try the Demo in StackBlitz](https://stackblitz.com/edit/ngx-strength-meter-demo)
 
 ## License
 
