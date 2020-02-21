@@ -1,20 +1,18 @@
 sudo: required
 dist: trusty
 addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+  chrome: stable
 language: node_js
 node_js:
-  - "8"
+  - "12"
 before_install:
-  - npm i npm@^6 -g
+  - npm i npm -g
+  - npm install -g @angular/cli
 install:
   - npm install
 script:
   - npm test
+  - npm run lint
   - npm run build
 before_script:
   - export DISPLAY=:99.0
