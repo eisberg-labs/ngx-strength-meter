@@ -1,15 +1,15 @@
 {
   "name": "ngx-strength-meter",
   "private": false,
-  "version": "11.0.0-alpha.0",
+  "version": "13.0.0",
   "description": "Angular widget for password strength estimation using zxcvbn",
   "dependencies": {
-    "tslib": "^2.0.0",
+    "tslib": "^2.3.0",
     "zxcvbn": "4.4.2"
   },
   "peerDependencies": {
-    "@angular/core": "^12.0.0",
-    "@angular/common": "^12.0.0"
+    "@angular/core": "^13.2.2",
+    "@angular/common": "^13.2.2"
   },
   "author": {
     "name": "Eisberg Labs",
