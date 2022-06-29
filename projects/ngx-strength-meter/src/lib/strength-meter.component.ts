@@ -78,9 +78,9 @@ import zxcvbn from 'zxcvbn';
   selector: 'strength-meter'
 })
 export class StrengthMeterComponent {
-  strength: string;
+  strength: number;
   @Output()
-  measure = new EventEmitter<string>();
+  measure = new EventEmitter<number>();
 
   @Input()
   set value(value: string) {
