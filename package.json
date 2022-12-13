@@ -27,7 +27,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ngx-strength-meter",
+    "build": "ng build --configuration production ngx-strength-meter",
     "test": "ng test ngx-strength-meter",
     "lint": "ng lint ngx-strength-meter",
     "publish": "cp README.md projects/ngx-strength-meter && ng build --configuration production ngx-strength-meter && cd dist/ngx-strength-meter && npm publish"
