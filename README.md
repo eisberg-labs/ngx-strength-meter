@@ -1,7 +1,3 @@
-# ⚠ Project is moved to [Angular Components](https://github.com/eisberg-labs/angular-components).
-
-## Use [@eisberg-labs/ngx-strength-meter](https://www.npmjs.com/package/@eisberg-labs/ngx-strength-meter) instead.
-
 # ngx-strength-meter 
 [![Downloads](http://img.shields.io/npm/dm/ngx-strength-meter.svg)](https://npmjs.org/package/ngx-strength-meter)
 ![Build status](https://github.com/eisberg-labs/ngx-strength-meter/actions/workflows/ci.yml/badge.svg)
@@ -10,7 +6,6 @@
 ![demo](docs/demo.gif)
 
 If you 👍 this project, consider giving it a ★, thanks! 🙌
-
 ## Installation
 
 ```sh
