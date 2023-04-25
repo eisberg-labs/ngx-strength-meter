@@ -1,41 +1,40 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
     "sourceMap": true,
+    "paths": {
+      "ngx-size-me": [
+        "dist/ngx-size-me"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
-    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "module": "es2020",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "target": "ES2022",
+    "module": "es2020",
     "lib": [
-      "es2018",
+      "es2020",
       "dom"
     ],
-    "paths": {
-      "ngx-strength-meter": [
-        "dist/ngx-strength-meter"
-      ],
-      "ngx-strength-meter/*": [
-        "dist/ngx-strength-meter/*"
-      ]
-    }
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "files": [
-    "projects/ngx-strength-meter/typings.d.ts"
-  ]
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

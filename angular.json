@@ -1,126 +1,54 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": ".",
   "projects": {
-    "ngx-strength-meter-demo": {
-      "root": "",
-      "sourceRoot": "src",
-      "projectType": "application",
-      "prefix": "app",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist-demo",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "aot": false,
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
-            }
-          },
-          "defaultConfiguration": ""
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "ngx-strength-meter-demo:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "ngx-strength-meter-demo:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "ngx-strength-meter-demo:build"
-          }
-        }
-      }
-    },
     "ngx-strength-meter": {
       "projectType": "library",
-      "root": "projects/ngx-strength-meter",
-      "sourceRoot": "projects/ngx-strength-meter/src",
+      "root": "ngx-strength-meter",
+      "sourceRoot": "ngx-strength-meter/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-strength-meter/tsconfig.lib.json",
-            "project": "projects/ngx-strength-meter/ng-package.json"
+            "project": "ngx-strength-meter/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-strength-meter/tsconfig.lib.prod.json"
+              "tsConfig": "ngx-strength-meter/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-strength-meter/tsconfig.lib.json"
+              "tsConfig": "ngx-strength-meter/tsconfig.lib.json"
             }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "ngx-strength-meter/src/test.ts",
+            "tsConfig": "ngx-strength-meter/tsconfig.spec.json",
+            "karmaConfig": "ngx-strength-meter/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "eslintConfig": "projects/ngx-strength-meter/.eslintrc",
-            "lintFilePatterns": ["projects/ngx-strength-meter/src/**/*.spec.ts", "projects/ngx-strength-meter/src/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/ngx-strength-meter/src/test.ts",
-            "tsConfig": "projects/ngx-strength-meter/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-strength-meter/karma.conf.js"
+            "lintFilePatterns": [
+              "ngx-strength-meter/**/*.ts",
+              "ngx-strength-meter/**/*.html"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "ngx-strength-meter-demo",
   "cli": {
-    "analytics": false
+    "analytics": "d898e046-07fb-4149-98ac-41eacb1aa38a",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

@@ -1,0 +1,38 @@
+{
+  "name": "@eisberg-labs/ngx-strength-meter",
+  "private": false,
+  "version": "15.0.1",
+  "description": "Angular widget for password strength estimation using zxcvbn",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "@types/zxcvbn": "^4.4.1",
+    "zxcvbn": "^4.4.2"
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "author": {
+    "name": "Ana Bujan Eisberg Labs",
+    "email": "ana@eisberg-labs.com",
+    "url": "https://www.eisberg-labs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eisberg-labs/ngx-strength-meter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eisberg-labs/ngx-strength-meter/issues"
+  },
+  "homepage": "https://ngx-strength-meter.amarjanica.com",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "zxcvbn",
+    "password",
+    "strength",
+    "password-strength"
+  ],
+  "license": "MIT"
+}
