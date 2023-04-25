@@ -1,7 +1,7 @@
 {
   "name": "@eisberg-labs/ngx-strength-meter",
   "private": false,
-  "version": "15.0.1",
+  "version": "15.0.2",
   "description": "Angular widget for password strength estimation using zxcvbn",
   "dependencies": {
     "tslib": "^2.3.0",
