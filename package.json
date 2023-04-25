@@ -1,79 +1,62 @@
 {
-  "name": "ngx-strength-meter-demo",
+  "name": "@eisberg-labs/ngx-strength-meter-project",
+  "description": "Angular widget for password strength estimation using zxcvbn.",
   "version": "0.0.0",
-  "description": "Angular widget for password strength estimation using zxcvbn",
-  "author": {
-    "name": "Eisberg Labs",
-    "email": "ana@eisberg-labs.com",
-    "url": "https://www.eisberg-labs.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/eisberg-labs/ngx-strength-meter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eisberg-labs/ngx-strength-meter/issues"
-  },
-  "homepage": "https://github.com/eisberg-labs/ngx-strength-meter",
-  "keywords": [
-    "angular",
-    "javascript",
-    "typescript",
-    "zxcvbn",
-    "password",
-    "strength"
+  "workspaces": [
+    "demo",
+    "ngx-strength-meter"
   ],
-  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build ngx-strength-meter",
-    "test": "ng test ngx-strength-meter",
-    "lint": "ng lint ngx-strength-meter",
-    "publish": "cp README.md projects/ngx-strength-meter && ng build --configuration production ngx-strength-meter && cd dist/ngx-strength-meter && npm publish"
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test --no-watch --code-coverage",
+    "lint": "ng lint",
+    "postbuild": "cp README.md LICENSE CHANGELOG.md thumbnail.gif dist/ngx-strength-meter",
+    "prettier": "prettier -c ngx-strength-meter/src/**/*",
+    "prettier:fix": "prettier --write ngx-strength-meter/src/**/*"
   },
   "private": true,
   "dependencies": {
-    "@angular-eslint/builder": "^12.6.1",
-    "@angular-eslint/schematics": "^13.0.0-alpha.0",
-    "@angular/animations": "~13.2.2",
-    "@angular/common": "~13.2.2",
-    "@angular/compiler": "~13.2.2",
-    "@angular/core": "~13.2.2",
-    "@angular/forms": "~13.2.2",
-    "@angular/platform-browser": "~13.2.2",
-    "@angular/platform-browser-dynamic": "~13.2.2",
-    "@angular/router": "~13.2.2",
-    "rxjs": "~6.5.3",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "@angular/animations": "^15.0.3",
+    "@angular/common": "^15.0.3",
+    "@angular/compiler": "^15.0.3",
+    "@angular/core": "^15.0.3",
+    "@angular/platform-browser": "^15.0.3",
+    "@angular/platform-browser-dynamic": "^15.0.3",
+    "element-resize-detector": "^1.2.4",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^13.2.2",
-    "@angular/cdk": "~13.2.1",
-    "@angular/cli": "~13.2.2",
-    "@angular/compiler-cli": "13.2.2",
-    "@angular/language-service": "13.2.2",
-    "@angular/material": "~13.2.1",
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~13.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.30.0",
-    "@typescript-eslint/parser": "^5.30.0",
-    "codelyzer": "^6.0.0",
-    "eslint": "^8.18.0",
-    "jasmine-core": "~3.8.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "^6.3.20",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.0.3",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.6.2",
-    "tslint": "~6.1.0",
-    "typescript": "~4.5.5",
-    "zxcvbn": "4.4.2"
+    "@angular-devkit/build-angular": "^15.0.3",
+    "@angular-eslint/builder": "15.2.1",
+    "@angular-eslint/eslint-plugin": "15.2.1",
+    "@angular-eslint/eslint-plugin-template": "15.2.1",
+    "@angular-eslint/schematics": "15.2.1",
+    "@angular-eslint/template-parser": "15.2.1",
+    "@angular/cli": "~15.2.6",
+    "@angular/compiler-cli": "^15.0.3",
+    "@types/jasmine": "~4.3.1",
+    "@typescript-eslint/eslint-plugin": "5.59.1",
+    "@typescript-eslint/parser": "5.59.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^15.2.2",
+    "prettier": "^2.8.3",
+    "typescript": "~4.9.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

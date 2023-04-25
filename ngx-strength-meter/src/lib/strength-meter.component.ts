@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import zxcvbn from 'zxcvbn';
 
 @Component({
@@ -8,11 +8,11 @@ import zxcvbn from 'zxcvbn';
     </div>
   `,
   styles: [
-      `
+    `
       .strength-meter {
         position: relative;
         height: 3px;
-        background: #DDD;
+        background: #ddd;
         margin: 10px auto 20px;
         border-radius: 3px;
       }
@@ -23,7 +23,7 @@ import zxcvbn from 'zxcvbn';
         height: inherit;
         background: transparent;
         display: block;
-        border-color: #FFF;
+        border-color: #fff;
         border-style: solid;
         border-width: 0 5px 0 5px;
         position: absolute;
@@ -73,12 +73,12 @@ import zxcvbn from 'zxcvbn';
         background: green;
         width: 100%;
       }
-    `
+    `,
   ],
-  selector: 'strength-meter'
+  selector: 'strength-meter',
 })
 export class StrengthMeterComponent {
-  strength: number;
+  strength: number | undefined;
   @Output()
   measure = new EventEmitter<number>();
 
