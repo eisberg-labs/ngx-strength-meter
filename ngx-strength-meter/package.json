@@ -9,8 +9,8 @@
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0"
   },
   "author": {
     "name": "Ana Bujan Eisberg Labs",
