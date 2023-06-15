@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'ngx-strength-meter/**'
   workflow_dispatch:
 
 jobs:
