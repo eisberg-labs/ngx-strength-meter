@@ -26,7 +26,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-KF960JLT82', // todo: move to env
+          trackingID: process.env.ANALYTICS_ID,
           anonymizeIP: true,
         },
         docs: {
@@ -37,7 +37,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -45,7 +44,9 @@ const config = {
       navbar: {
         title: 'Ngx Strength Meter',
         items: [
-          {href: 'https://www.amarjanica.com/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://www.amarjanica.com/blog', label: 'Blog', position: 'left'
+          },
           {
             href: 'https://github.com/eisberg-labs/ngx-strength-meter',
             label: 'GitHub',
