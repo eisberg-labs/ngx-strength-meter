@@ -1,3 +1,5 @@
+>This repository has been archived and is no longer actively maintained. While it was a valuable resource during my Angular development journey, I have since shifted my focus to React for my current and future projects. Feel free to explore the existing code, but please note that issues and pull requests will not be addressed.
+
 [![Continuous Integration](https://github.com/eisberg-labs/ngx-strength-meter/actions/workflows/ci.yml/badge.svg)](https://github.com/eisberg-labs/ngx-strength-meter/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/eisberg-labs/ngx-strength-meter/branch/master/graph/badge.svg?token=GQCS6ZEVU3)](https://codecov.io/gh/eisberg-labs/ngx-strength-meter)
 [![npm downloads](https://img.shields.io/npm/dm/@eisberg-labs/ngx-strength-meter.svg)](https://www.npmjs.com/package/@eisberg-labs/ngx-strength-meter)
